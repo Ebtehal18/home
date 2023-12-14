@@ -1,0 +1,261 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* margin: 50px; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* row-gap: 20px; */
+  width: 1440px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  /* background-color: antiquewhite; */
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 1/-1;
+  padding: 20px;
+  margin-top: 30px;
+  height: 100px;
+}
+
+.logo {
+  height: 100%;
+}
+.nav-links {
+  align-self: center;
+  display: flex;
+  gap: 60px;
+}
+nav a {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
+}
+.illustration {
+  width: 800px;
+  height: auto;
+}
+.home {
+  display: flex;
+  /* gap: 120px; */
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  grid-column: 1/-1;
+  /* gap: 20px; */
+}
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+}
+.description {
+  font-size: 20px;
+  line-height: 1.5;
+  /* padding: 20px; */
+}
+.home-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.inputs {
+  display: flex;
+  gap: 10px;
+}
+input,
+button {
+  padding: 15px 20px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-color: transparent;
+}
+.home input {
+  flex: 0 0 300px;
+  border-color: hsl(243, 87%, 12%);
+}
+.home button {
+  flex: 0 0 240px;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+}
+.about {
+  display: flex;
+  /* gap: 120px; */
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  /* gap: 20px; */
+  /* background-color: hsl(238, 22%, 44%, 0.5); */
+  margin-top: 80px;
+  grid-column: 1/-1;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.5;
+}
+.about-description {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.link-flyo {
+  color: hsl(170, 45%, 43%);
+  text-decoration: underline;
+  line-height: 5px;
+}
+.personal-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: hsl(238, 22%, 44%, 0.5);
+  width: 55%;
+  height: auto;
+  padding: 20px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  margin-top: 30px;
+}
+.person-details {
+  display: flex;
+  gap: 10px;
+}
+.dot {
+  font-weight: 700;
+  font-size: 36px;
+  height: 25px;
+}
+
+.img-card img {
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.person-title {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.person-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+.person-job {
+  font-size: 14px;
+  color: #444;
+}
+/* } */
+/* .blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-column: 1/-1; */
+/* column-gap: 40px; */
+/* } */
+
+.blog-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-column: 1/-1; */
+  /* column-gap: 40px; */
+  background-color: hsl(238, 22%, 44%);
+  height: 50vh;
+  /* width: 1000px; */
+  padding: 40px;
+  margin-top: 60px;
+  /* grid-column: 1/-1; */
+  align-content: center;
+}
+.blog-left {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.blog-title {
+  font-size: 36px;
+  font-weight: 400;
+}
+.blog-describtion {
+  line-height: 1.5;
+}
+.blog-inputs {
+  /* align-self: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* grid-column: 2; */
+}
+/* .blog-inputs {
+  justify-self: end;
+} */
+.blog-inputs input {
+  width: 80%;
+}
+.blog-inputs button {
+  width: 30%;
+  background-color: hsl(224, 93%, 58%);
+  color: hsl(240, 75%, 98%);
+}
+.contact-content {
+  height: 50vh;
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: "Raleway", sans-serif;
+  row-gap: 20px;
+}
+
+.phone-email {
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  align-self: center;
+  justify-self: center;
+  gap: 10px;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  gap: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  grid-column: 3;
+  align-self: center;
+  justify-self: center;
+  gap: 10px;
+}
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(224, 93%, 58%, 0.7);
+}
